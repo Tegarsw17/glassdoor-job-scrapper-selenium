@@ -114,11 +114,21 @@ def get_jobs(link, num_jobs):
             except NoSuchElementException:
                 revenue = -1
 
+            try:
+                driver.find_element(
+                    By.XPATH, './/*[@id="JobDescriptionContainer"]/div[2]').click()
+                time.sleep(.5)
+                desc = driver.find_element(
+                    By.XPATH, './/*[@id="JobDescriptionContainer"]').text
+            except NoSuchElementException:
+                desc = -1
+
             # input data to jobs
             jobs.append({"Job Title": role_job,
                          "Salary Estimate": salary_estimate,
                          "Rating": rating,
                          "Company Name": company_name,
+                         "Description": desc,
                          "Location": location,
                          "size": size,
                          "type": type_company,
