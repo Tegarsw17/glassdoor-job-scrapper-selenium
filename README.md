@@ -2,6 +2,8 @@
 
 Glassdoor is built for foundation of increasing workplace transparency, Glassdoor offers insights into the employee experience powered by millions of company ratings and reviews, CEO approval ratings, salary reports, interview reviews and questions, benefits reviews, office photos and more, combined with the latest jobs.
 
+## Shoutout to [arapfaik](https://github.com/arapfaik) for the idea
+
 ## About scrapper
 
 For this project we used library python called [Selenium](https://selenium-python.readthedocs.io/)
@@ -18,7 +20,7 @@ For this project we used library python called [Selenium](https://selenium-pytho
 8. Sector
 9. Founded
 10. Industry
-11. revenue
+11. Revenue
 
 ![alt text](result.png)
 
@@ -35,3 +37,5 @@ df = gs.get_jobs(link, 100) #put the number as you need
 ```
 
 4. Happy exploring data
+
+### If you have another version happy to hear that
